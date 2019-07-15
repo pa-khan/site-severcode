@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<title>SeverCode</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-	<link rel="stylesheet" href="template/styles/css/style.css" />
-	<link rel="stylesheet" href="template/styles/css/responsive.css" />
-	<script src="template/scripts/libs.js"></script>
-	<script src="template/scripts/common.js"></script>
+	<link rel="stylesheet" href="template/styles/css/style.css?ver=4" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css?ver=4" />
+	<script src="template/scripts/libs.js?ver=4"></script>
+	<script src="template/scripts/common.js?ver=4"></script>
 	<!--[if lt IE 9]>
 	<script>
 		document.createElement('header');
@@ -22,19 +22,39 @@
 </head>
 <body>
 <div class="main-wrap">
-	<header class="header">
+	<header class="header" id="main">
 		<div class="nav">
 			<div class="case row i-mid">
 				<div class="nav__list">
 					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Наша команда</a></li>
-						<li><a href="#">Услуги и цены</a></li>
+						<li><a href="#main">Главная</a></li>
+						<li><a href="">Наша команда</a></li>
+						<li><a href="#services">Услуги и цены</a></li>
 						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
-				<a data-fancybox data-src="#" href="javascript:;" class="nav__btn btn btn_blue btn_normal">Оставить заявку</a>
+				<div class="nav__contacts panel__contacts row">
+					<div class="panel__contact"><u><i class="icon icon-email-white-small"></i></u><p><a href="mailto:info@severcode.ru">info@severcode.ru</a></p></div>
+					<div class="panel__contact"><u><i class="icon icon-clock-white-small"></i></u><p>10-19 по Москве</p></div>
+					<div class="panel__contact panel__contact_full"><u><i class="icon icon-placeholder-white-small"></i></u><p>г. Санкт-Петербург. ул. 9 января д. 9 оф. 6 </p></div>
+				</div>
+				<a href="" class="nav__btn btn btn_blue btn_normal">Оставить заявку</a>
+			</div>
+		</div>
+		<div class="nav-mobile">
+			<div class="case">
+				<div class="nav-mobile__wrap row i-mid">
+					<div class="nav-mobile__btn hum">
+						<div class="hum__lines">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="hum__text">Меню</div>
+					</div>
+					<div class="nav-mobile__phone"><a href="tel:+79500298531"><i class="icon icon-telephone-small"></i>8 950 029 85 31</a></div>
+				</div>
 			</div>
 		</div>
 		<div class="panel">
@@ -42,13 +62,13 @@
 				<div class="panel__wrap row i-mid">
 					<div class="panel__logo"><img src="upload/logos/logo.png" alt=""></div>
 					<div class="panel__contacts row">
-						<div class="panel__contact"><u><i class="icon icon-email-small"></i></u><p><a href="mailto:info@severcode.ru">info@severcode.ru</a></p></div>
-						<div class="panel__contact"><u><i class="icon icon-clock-small"></i></u><p>10-19 по Москве</p></div>
-						<div class="panel__contact panel__contact_full"><u><i class="icon icon-placeholder-small"></i></u><p>г. Санкт-Петербург. ул. 9 января д. 9 оф. 6 </p></div>
+						<div class="panel__contact"><u><i class="icon icon-email-blue-small"></i></u><p><a href="mailto:info@severcode.ru">info@severcode.ru</a></p></div>
+						<div class="panel__contact"><u><i class="icon icon-clock-blue-small"></i></u><p>10-19 по Москве</p></div>
+						<div class="panel__contact panel__contact_full"><u><i class="icon icon-placeholder-blue-small"></i></u><p>г. Санкт-Петербург. ул. 9 января д. 9 оф. 6 </p></div>
 					</div>
 					<div class="panel__call row i-mid">
 						<div class="panel__phone"><i class="icon icon-telephone"></i><p><a href="tel:+79500298531">8 950 029 85 31</a></p></div>
-						<a data-fancybox data-src="#" href="javascript:;" class="panel__btn btn btn_blue btn_normal">Оставить заявку</a>
+						<a href="" class="panel__btn btn btn_blue btn_normal">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -56,18 +76,18 @@
 		<div class="hello">
 			<div class="case">
 				<div class="hello__rounds rounds">
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
-					<div class="round"></div>
+					<div class="round round_normal"></div>
+					<div class="round round_xs"></div>
+					<div class="round round_small"></div>
+					<div class="round round_xxxs"></div>
+					<div class="round round_xxs"></div>
+					<div class="round round_extra"></div>
+					<div class="round round_big"></div>
+					<div class="round round_xs"></div>
+					<div class="round round_normal"></div>
+					<div class="round round_xxs"></div>
+					<div class="round round_xs"></div>
+					<div class="round round_small"></div>
 				</div>
 				<div class="hello__wrap row i-top">
 					<div class="hello__text">
@@ -89,12 +109,54 @@
 
 
 	<main class="main">
-		<div class="services">
+		<div class="services" id="services">
 			<div class="case">
+				<div class="services__rounds rounds">
+					<div class="round round_xs"></div>
+					<div class="round round_small"></div>
+					<div class="round round_xxs"></div>
+					<div class="round round_extra"></div>
+					<div class="round round_extra"></div>
+					<div class="round round_extra"></div>
+					<div class="round round_xxs"></div>
+					<div class="round round_xs"></div>
+				</div>
 				<div class="services__title title">Мы предлагаем</div>
-				<div class="services__subtitle subtitle">Создание сайтов на 1С-Битрикс</div>
 				<div class="services__slider">
 					<div class="services__slider-item">
+						<div class="services__subtitle subtitle">Создание сайтов на 1С-Битрикс</div>
+						<div class="services__wrap row i-top">
+							<div class="services__img"><img src="upload/slider/1.png" alt=""></div>
+							<div class="services__list row">
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/web.png" alt=""></div>
+									<div class="services__name">Разработка интернет-магазина </div>
+								</div>
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/1c-bitrix.png" alt=""></div>
+									<div class="services__name">Перенос сайта <br>на 1С-Битрикс</div>
+								</div>
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/list.png" alt=""></div>
+									<div class="services__name">Сайт на готовом решении</div>
+								</div>
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/1c-bitrix.png" alt=""></div>
+									<div class="services__name">Интеграция с 1С</div>
+								</div>
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/server.png" alt=""></div>
+									<div class="services__name">Хостинг, <br>доменное имя</div>
+								</div>
+								<div class="services__item">
+									<div class="services__icon"><img src="upload/icons/content.png" alt=""></div>
+									<div class="services__name">Наполнение сайта</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__slider-item">
+						<div class="services__subtitle subtitle">Создание сайтов на 1С-Битрикс</div>
 						<div class="services__wrap row i-top">
 							<div class="services__img"><img src="upload/slider/1.png" alt=""></div>
 							<div class="services__list row">
@@ -130,28 +192,44 @@
 		</div>
 		<div class="support">
 			<div class="case">
+				<div class="support__rounds rounds">
+					<div class="round round_normal"></div>
+					<div class="round round_xs"></div>
+					<div class="round round_small"></div>
+					<div class="round round_small"></div>
+					<div class="round round_md"></div>
+					<div class="round round_super"></div>
+					<div class="round round_xxs"></div>
+					<div class="round round_extra"></div>
+					<div class="round round_xs"></div>
+				</div>
 				<div class="support__title subtitle">Техническая поддержка Битрикс24</div>
 				<div class="support__wrap row">
 					<div class="support__list row">
 						<div class="support__item">
 							<div class="support__icon"><img src="upload/icons/chat.png" alt=""></div>
-							<div class="support__name">Поддержка</div>
-							<div class="support__text">Настраиваем, интегрируем, консультируем по любым вопросам.</div>
+							<div class="support__content">
+								<div class="support__name">Поддержка</div>
+								<div class="support__text">Настраиваем, интегрируем, консультируем по любым вопросам.</div>
+							</div>
 						</div>
 						<div class="support__item">
 							<div class="support__icon"><img src="upload/icons/bitrix24.png" alt=""></div>
-							<div class="support__name">Разработка функционала для коробочной версии</div>
-							<div class="support__text">Разрабатываем дополнительный функционал для коробочной версии Битрикс24.</div>
+							<div class="support__content">
+								<div class="support__name">Разработка функционала для коробочной версии</div>
+								<div class="support__text">Разрабатываем дополнительный функционал для коробочной версии Битрикс24.</div>
+							</div>
 						</div>
 					</div>
 					<div class="support__img"><img src="upload/suppot-bitrix24.png" alt=""></div>
 				</div>
+				<a href="" class="support__btn btn btn_blue btn_normal">Оставить заявку</a>
 			</div>
 		</div>
 		<div class="tariffs">
 			<div class="case">
 				<div class="tariffs__title title">Тарифы</div>
-				<div class="tariffs__list row">
+				<div class="tariffs__list row i-top">
 					<div class="tariffs__item tariffs__item_black">
 						<div class="tariffs__head">Стандарт</div>
 						<div class="tariffs__body">
@@ -161,7 +239,7 @@
 						</div>
 						<div class="tariffs__foot">Подходит для внештатных ситуаций и оперативного вмешательство.</div>
 					</div>
-					<div class="tariffs__item tariffs__item_blue-light tariffs__item_mt">
+					<div class="tariffs__item tariffs__item_blue-light tariffs__item_shadow tariffs__item_big tariffs__item_mt">
 						<div class="tariffs__head">VIP</div>
 						<div class="tariffs__body">
 							<p>пакет от 10 часов</p>
@@ -187,6 +265,7 @@
 					</div>
 				</div>
 				<div class="tariffs__desc">Нужно больше? Готовы предоставить проектную команду на индивидуальных условиях.</div>
+				<a href="" class="tariffs__btn btn btn_blue btn_normal">Оставить заявку</a>
 			</div>
 		</div>
 		<div class="audit">
@@ -202,10 +281,10 @@
 					<div class="audit__desc-corner-right"></div>
 				</div>
 				<div class="audit__form form">
-					<div class="form__input input input_border-white input_white input_normal">
+					<div class="form__input input input_border-white input_normal">
 						<input type="text" class="input__wrap" placeholder="Как вас зовут?">
 					</div>
-					<div class="form__input input input_border-white input_white input_normal">
+					<div class="form__input input input_border-white input_normal">
 						<input type="text" class="input__wrap" placeholder="Любой удобный контакт">
 					</div>
 					<button class="form__btn btn btn_yellow btn_normal">Заказать аудит сайта</button>
@@ -245,11 +324,11 @@
 				<div class="advantages__list row">
 					<div class="advantages__item">
 						<div class="advantages__icon"><img src="upload/icons/goal.png" alt=""></div>
-						<div class="advantages__text"><strong>Оплата</strong> исключительно за результат по факту принятой работы</div>
+						<div class="advantages__text"><strong>Оплата</strong> исключительно за результат по факту</div>
 					</div>
 					<div class="advantages__item">
 						<div class="advantages__icon"><img src="upload/icons/support.png" alt=""></div>
-						<div class="advantages__text"><strong>Экстренная помощь</strong> <br>в случае неполадок неполадокпринятой работы</div>
+						<div class="advantages__text"><strong>Экстренная помощь</strong> <br>в случае неполадок</div>
 					</div>
 					<div class="advantages__item">
 						<div class="advantages__icon"><img src="upload/icons/ranges.png" alt=""></div>
@@ -272,19 +351,19 @@
 					<p>От форм заказа с интеграцией с КЛАДР до проектирования огромных баз аналогов автозапчастей.</p>
 					<p>Мы всегда готовы предложить лаконичное решение задачи за оптимальные сроки.</p> 
 				</div>
-				<div class="order__title title">Оставьте заявку или позвоните по номеру <a href="tel:+79500298531">+79500298531</a>+79500298531</div>
+				<div class="order__title title">Оставьте заявку или позвоните по номеру <a href="tel:+79500298531">+79500298531</a></div>
 				<div class="order__form form">
-					<div class="form__input input input_border-white input_white input_normal">
+					<div class="form__input input input_border-white input_normal">
 						<input type="text" class="input__wrap" placeholder="Как вас зовут?">
 					</div>
-					<div class="form__input input input_border-white input_white input_normal">
+					<div class="form__input input input_border-white input_normal">
 						<input type="text" class="input__wrap" placeholder="Любой удобный контакт">
 					</div>
-					<button class="form__btn btn_yellow btn_normal">Обсудить проект</button>
+					<button class="form__btn btn btn_yellow btn_normal">Обсудить проект</button>
 				</div>
 			</div>
 		</div>
-		<div class="start">
+		<div class="start row">
 			<div class="start__discussion-wrap">
 				<div class="start__discussion discussion">
 					<div class="discussion__title title">Давайте обсудим <br>Ваш проект!</div>
@@ -299,10 +378,10 @@
 							<input type="file">
 							<label>Прикрепить файл</label>
 						</div>
-						<div class="discussion__textarea textarea textarea_border-blue textarea_white textarea_normal">
+						<div class="discussion__textarea textarea textarea_border-blue textarea_normal">
 							<textarea class="textarea__wrap" placeholder="Комментарий"></textarea>
 						</div>
-						<button class="discussion__btn btn btn_blue btn_normal">Обсудить проект</button>
+						<button class="discussion__btn btn btn_dark-blue btn_normal">Обсудить проект</button>
 					</div>
 				</div>
 			</div>
@@ -310,13 +389,13 @@
 				<div class="start__company company">
 					<div class="company__title subtitle">Нам доверяют</div>
 					<div class="company__list row">
-						<a href="" class="company__item"><img src="upload/logos/redmond.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/finntrail.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/instrumtorg.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/utlc.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/snabstory.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/dvizhkom.png" alt=""></a>
-						<a href="" class="company__item"><img src="upload/logos/resonantarts.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/redmond.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/finntrail.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/instrumtorg.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/utlc.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/snabstory.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/dvizhkom.png" alt=""></a>
+						<a href="upload/portfolio/screen.png" class="company__item" data-fancybox=""><img src="upload/logos/resonantarts.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -324,8 +403,8 @@
 	</main>
 
 	<footer class="footer">
-		<div class="contacts">
-			<div class="contacts__data-wrap">
+		<div class="contacts row" id="contacts">
+			<div class="contacts__wrap">
 				<div class="contacts__data">
 					<div class="contacts__title title">Наши контакты</div>
 					<div class="contacts__text data">
@@ -352,6 +431,32 @@
 				</div>
 			</div>
 			<div class="contacts__map map">
+				<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+				<script>
+					ymaps.ready(function () {
+			    var myMap = new ymaps.Map('map', {
+			            center: [59.847042, 30.446582],
+			            zoom: 16,
+			            controls: []
+			        }, {
+			            searchControlProvider: 'yandex#search'
+			        }),
+
+			        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+			            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+			        ),
+
+			        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+			            iconLayout: 'default#image',
+			            iconImageHref: 'upload/icons/marker.png',
+			            iconImageSize: [40, 60],
+			            iconImageOffset: [-20, -60]
+			        })
+
+
+			    myMap.geoObjects.add(myPlacemark)
+					});
+				</script>
 				<div id="map"></div>
 			</div>
 		</div>
